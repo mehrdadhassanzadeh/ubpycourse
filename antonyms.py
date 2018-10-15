@@ -1,13 +1,11 @@
-Antonyms=dict()
-Continue='y'
-while Continue=='y':
-    Word=input("Please enter your word:")
-    if Word in Antonyms.keys():
-        print("The antonym of "+Word+" is :"+Antonyms[Word])
+a=dict()
+Continue="y"
+while Continue=="y":
+    word=input("Lotfan kalame khod ra vared konid:")
+    if word in a.keys():
+        print("Antonym of " + word  +":" + a[word])
     else:
-        print("The antonym of "+Word+" does not exist!!!")
-        KnowTheAntonym=input("Do you know the antonym of "+Word+" ?")
-        if KnowTheAntonym=='y':
-            Antonym=input("Please enter the antonym of "+Word+":")
-            Antonyms[Word]=Antonym
-    Continue=input("Do you want to try another word?")
+        Answer=input("Man nemidanam. Aya to midani?")
+        if Answer=="y":
+            a[word]=input("Motezad ra vard kon:")
+    Continue=input("Aya mikhahid edame dahid?")
